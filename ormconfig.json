@@ -1,0 +1,14 @@
+{
+  "type": "mysql",
+  "url": "mysql://root:dev123@127.0.0.1/oneistox-dev",
+  "synchronize": true,
+  "migrations": [
+    "./src/database/migrations/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  },
+  "entities": [
+    "./src/model/*.ts"
+  ]
+}
